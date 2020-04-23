@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:local": "webpack-dev-server --config ./webpack.localDev.js --port 8235",
-    "dev": "webpack-dev-server --config ./webpack.dev.js --port 8235",
+    "dev:local": "webpack-dev-server --config ./webpack.localDev.js --port 7235",
+    "dev": "webpack-dev-server --config ./webpack.dev.js --port 7235",
     "build": "webpack --config ./webpack.config.js -p"
   },
   "keywords": [],
