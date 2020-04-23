@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"npm run start:config\" \"npm run start:common-deps\"",
-    "start:config": "cross-env NODE_ENV=development webpack-dev-server --config ./build_conf/webpack.config.config.dev.js --port 8233",
-    "start:common-deps": "cross-env NODE_ENV=development webpack-dev-server --config ./build_conf/webpack.common-deps.config.dev.js --port 8234",
+    "start:config": "cross-env NODE_ENV=development webpack-dev-server --config ./build_conf/webpack.config.config.dev.js --port 7233",
+    "start:common-deps": "cross-env NODE_ENV=development webpack-dev-server --config ./build_conf/webpack.common-deps.config.dev.js --port 7234",
     "build": "npm run build:config && npm run build:common-deps",
     "build:config": "cross-env NODE_ENV=production webpack --config ./build_conf/webpack.config.config.js -p",
     "build:common-deps": "cross-env NODE_ENV=production webpack --config ./build_conf/webpack.common-deps.config.js -p"

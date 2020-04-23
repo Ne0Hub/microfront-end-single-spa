@@ -3,25 +3,25 @@ module.exports = {
     "components": {
         "portal": {
             "moduleName": "@portal/config",
-            "origin": "http://localhost:8233",
+            "origin": "http://localhost:7233",
             "entry": "/config.js"
         },
         "menu": {
             "moduleName": "@portal/menu",
             "router": true,
-            "origin": "http://localhost:8235",
+            "origin": "http://localhost:7235",
             "entry": "/menu.js"
         },
         "project1": {
             "moduleName": "@portal/project1",
             "router": "project1",
-            "origin": "http://localhost:8236",
+            "origin": "http://localhost:7236",
             "entry": "/project1.js"
         },
         "project2": {
             "moduleName": "@portal/project2",
             "router": "project2",
-            "origin": "http://localhost:8237",
+            "origin": "http://localhost:7237",
             "entry": "/project2.js"
         }
     },
@@ -44,11 +44,11 @@ module.exports = {
         }
     },
     "common-deps-origin": {
-        "development": 'http://localhost:8000',
+        "development": 'http://localhost:7000',
         "production": "./common-deps-static"
     },
     "common-deps-conf": {
-        "development": 'http://localhost:8234',
+        "development": 'http://localhost:7234',
         "production": "./common-deps"
     }
 }

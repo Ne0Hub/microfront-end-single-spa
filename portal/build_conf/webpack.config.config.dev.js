@@ -11,7 +11,7 @@ config.devServer = {
   },
   proxy: {
     "/common/": {
-      target: "http://localhost:8234",
+      target: "http://localhost:7234",
       pathRewrite: {"^/common" : ""}
     }
   }

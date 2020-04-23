@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    publicPath: process.env.NODE_ENV === 'development' ? 'http://localhost:8237' : '/project2',
+    publicPath: process.env.NODE_ENV === 'development' ? 'http://localhost:7237' : '/project2',
     chainWebpack: config => {
         config.entryPoints.clear()
         config.entry('project2').add(process.env.VUE_APP_ENTRY).end()
@@ -10,7 +10,7 @@ module.exports = {
         } else {
             config.output.filename('project2.js').library('project2')
         }
-        config.devServer.port(8237).headers({
+        config.devServer.port(7237).headers({
             "Access-Control-Allow-Origin": "*",
         })
         config.module.rule('images').use('url-loader').loader('url-loader').tap(options => ({
